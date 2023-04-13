@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ margin: 40 }}>
+      <div style={{ display: 'flex', alignItems: 'center',  }}>
+        <img src={require('./assets/logo.png')} alt="" style={{ height: 50 }} />
+        <span style={{ color: '#aaa', marginLeft: 10, paddingLeft: 10, borderLeftColor: '#aaa', borderLeftWidth: 1, borderLeftStyle: 'solid' }}>Account</span>
+      </div>
+
+      <br />
+      <div>
+        Please try again later.
+      </div>
     </div>
   );
 }
